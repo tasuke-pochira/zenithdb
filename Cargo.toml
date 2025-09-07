@@ -1,8 +1,9 @@
-[package]
-name = "zenithdb"
-version = "0.1.0"
-edition = "2024"
+# In the root Cargo.toml
+[workspace]
+members = [
+    "zenithdb-server",
+    "zenithdb-client",
+    "examples/basic-client", # Add this line
+]
 
-[dependencies]
-tokio = {version ="1", features =["full"]}
-dashmap = "5.5.3"
+resolver = "2"

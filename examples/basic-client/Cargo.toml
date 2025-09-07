@@ -1,0 +1,9 @@
+# In examples/basic-client/Cargo.toml
+[package]
+name = "basic-client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+zenithdb-client = { path = "../../zenithdb-client" }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
